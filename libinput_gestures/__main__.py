@@ -7,7 +7,7 @@ import sys
 import click
 
 log = logging.getLogger(__name__)
-logging.basicConfig(format='%(asctime)-15s %(message)s')
+logging.basicConfig(format='%(asctime)-15s %(levelname)s %(message)s')
 verbosity_levels = [logging.INFO, logging.DEBUG]
 
 
