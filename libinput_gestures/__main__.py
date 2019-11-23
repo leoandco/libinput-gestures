@@ -50,7 +50,7 @@ def listen(event_file, dispatcher, verbose):
                     accum_dy += dy
                 elif event == 'GESTURE_SWIPE_END':
                     # angle     = angle of gesture direction with 0 degrees being up
-                    # distance  = distance between gesture start and end (mouse acceleration account for)
+                    # distance  = distance between gesture start and end (mouse acceleration accounted for)
                     # deviation = deviation in degrees to the nearest 90 degree angle
                     # direction = direction of gesture starting from 0 being up going clockwise to 3 pointing left
                     angle = round((math.degrees(math.atan2(accum_dy, accum_dx)) + 90) % 360)
